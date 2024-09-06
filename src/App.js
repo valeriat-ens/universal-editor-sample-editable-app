@@ -9,6 +9,7 @@ import About from "./components/About";
 import {getAuthorHost} from "./utils/fetchData";
 import logo from "./images/wknd-logo-dk.svg";
 import "./App.scss";
+import FragmentReference from "./components/FragmentReference";
 // import { useSparkleAppUrl } from "./hooks";
 
 const NavMenu = () => (
@@ -17,6 +18,7 @@ const NavMenu = () => (
       <li><a href={`/${window.location.search}`}>Adventures</a></li>
       <li><a href={`/articles${window.location.search}`}>Magazine</a></li>
       <li><a href={`/aboutus${window.location.search}`}>About Us</a></li>
+      <li><a href={`/fragment-reference${window.location.search}`}>Fragment Reference</a></li>
     </ul>
   </nav>
 );
@@ -60,6 +62,7 @@ function App() {
               <Route path="/articles" element={<Articles />} />
               <Route path="/articles/article/:slug" element={<ArticleDetail />} />
               <Route path="/aboutus" element={<About />} />
+              <Route path="/fragment-reference" element={<FragmentReference />} />
             </Routes>
           </main>
         </Router>
