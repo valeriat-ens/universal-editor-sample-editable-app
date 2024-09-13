@@ -1,6 +1,6 @@
 import React from 'react';
 
-const _path = "/content/dam/timo-tests/test-120-5";
+const _path = "/content/dam/headless-canvas/fragment-reference/cf--2";
 
 const editorProps = {
     "data-aue-resource": "urn:aemconnection:" + _path + "/jcr:content/data/master",
