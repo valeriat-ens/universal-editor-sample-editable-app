@@ -1,6 +1,6 @@
 import React from 'react';
 
-const _path = "/content/dam/headless-canvas/fragment-reference/cf--2";
+const _path = "/content/dam/headless-canvas/content-reference/content-reference-cf--1";
 
 const editorProps = {
     "data-aue-resource": "urn:aemconnection:" + _path + "/jcr:content/data/master",
@@ -8,13 +8,13 @@ const editorProps = {
     "data-aue-filter": "cf"
 };
 
-const FragmentReference = () => {
+const ContentReference = () => {
 
    return (
        <div style={{padding: "10px"}} {...editorProps}>
-           <button>Click here to see Fragment Reference fields</button>
+           <button>Click here to see Content Reference fields</button>
        </div>
    )
 };
 
-export default FragmentReference;
+export default ContentReference;
